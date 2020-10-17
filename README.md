@@ -1,4 +1,4 @@
-### [yddanyi 基于有道翻译web实现](http://fanyi.youdao.com/)
+### [ydfanyi 基于有道翻译web实现](http://fanyi.youdao.com/)
 
 #### 安装
 ```

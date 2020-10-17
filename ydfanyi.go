@@ -20,7 +20,7 @@ const (
 	api       = "http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule"
 	referer   = "http://fanyi.youdao.com/"
 	userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0"
-	cookie    = "OUTFOX_SEARCH_USER_ID=-1010247688@10.169.0.83"
+	cookie    = "OUTFOX_SEARCH_USER_ID=-722430601@10.169.0.102"
 )
 
 const (
@@ -141,7 +141,7 @@ func Do(str string, options *Options) (result Result, err error) {
 		return
 	}
 
-	if res.StatusCode >= 400 {
+	if res.StatusCode >= 300 {
 		err = fmt.Errorf(string(bytes))
 		return
 	}
