@@ -48,6 +48,9 @@ type Result struct {
 		Src string `json:"src"`
 	} `json:"translateResult"`
 	Type string `json:"type"`
+	SmartResult struct{
+		Entries []string `json:"entries"`
+	} `json:"smartResult"`
 }
 
 func (r Result) String() string {
